@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="todo.css">
+    <!-- <script src="todo.js" defer></script> -->
+    <script src="local_storage.js" defer></script>
+    <title>ToDo</title>
+</head>
+<body>
+    <header class="header">
+
+        <div class="title">
+            <h1>ToDo</h1>
+            <h3>Make Your Own ToDos ...</h3>
+        </div>
+
+        <form action="#" class="form-search">
+            <div class="search-container">
+                <i class="fas fa-search icon-search"></i>
+                <input class="input-search" type="text" name="search">
+            </div>
+        </form>
+
+    </header>
+
+        <form action="#" class="form-add">
+
+            <div class="add-container">
+                <button class="icon-add" type="submit">
+                    <i class="fas fa-plus-square fa-2x"></i>
+                </button>
+                <input class="input-add" type="text" name="add" placeholder="Add a new todos..." >
+            </div>
+
+            <div class="select-container">
+                <select name="todos" class="filter-todo">
+                <option value="all">All</option>
+                <option value="completed">Completed</option>
+                <option value="uncompleted">Uncompleted</option>
+                </select>
+            </div>
+
+        </form>
+
+
+    <div class="todo-container">
+        <ul class="todo-list"></ul>
+    </div>
+
+</body>
+</html>
